@@ -8,11 +8,12 @@ body{
 }
 
 #logo{
-    width: 75%;
+    width: 20%;
 }
 
 #menu{
     background-color:var(--encabezado) !important;
+    height: 90px;
 }
 
 .nav-link{
@@ -21,13 +22,25 @@ body{
 }
 
 .nav-link:hover{
-    color: #10bce7;
+    color: #412307;
 }
 
 .alto-img{
-    height: 800px !important;
+    height: 650px !important;
     padding-top: 60px !important;
-    background-size: contain;
+    background-size: auto !important;
+}
+
+.btn-warning{
+    background-color: #412307;
+    border-color: #412307;
+    color: #fff;
+}
+
+.btn-warning:hover{
+    background-color: #995d2d;
+    border-color: #995d2d;
+    color: #fff;
 }
 
 .nav-link.active{
@@ -97,7 +110,7 @@ body{
 }
 
 .footer__logo{
-    width: 210px;
+    width: 300px;
 }
 
 #page-footer .ftcontainer {
