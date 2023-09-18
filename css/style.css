@@ -1,5 +1,5 @@
 :root{
-    --encabezado: #575A4F;
+    --encabezado: #533D25;
     --enlace:#fff;
 }
 
@@ -8,12 +8,12 @@ body{
 }
 
 #logo{
-    width: 20%;
+    width: 19%;
 }
 
 #menu{
     background-color:var(--encabezado) !important;
-    height: 90px;
+    height: 100px;
 }
 
 .nav-link{
@@ -22,7 +22,7 @@ body{
 }
 
 .nav-link:hover{
-    color: #412307;
+    color: #C3C7A1;
 }
 
 .alto-img{
@@ -32,25 +32,25 @@ body{
 }
 
 .btn-warning{
-    background-color: #412307;
-    border-color: #412307;
+    background-color: #575A4F;
+    border-color: #535a4f;
     color: #fff;
 }
 
 .btn-warning:hover{
-    background-color: #995d2d;
-    border-color: #995d2d;
-    color: #fff;
+    background-color: #C3C7A1;
+    border-color: #bcc7a1;
+    color: #010c05;
 }
 
 .nav-link.active{
-    color: #d8e51b !important;
+    color: #C3C7A1 !important;
     font-weight: bold !important;
     
 }
 
 .nav-link.active:hover{
-    color: #53adee !important;
+    color: #b3c7a1!important;
 }
 
 /* novedades */
@@ -62,6 +62,12 @@ body{
     width: 100%;
     text-align: center;
     color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(2, 61, 2);
+    background-color: #b3c7a1;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
 /* sección videos */
@@ -127,8 +133,9 @@ body{
     height: auto;
     width: 50px;
     display: inline-block;
-    font-size: 14px;
+    font-size: 20px;
     line-height: inherit;
+    padding-left: 20px;
 }
 
 .ft-link{
@@ -150,7 +157,7 @@ body{
     font-size: 1.0rem;
 }
 
-.footer__link:nth-child(1){
+/* .footer__link:nth-child(1){
     border-left: 2px solid #f3d707;
 }
 .footer__link:nth-child(2){
@@ -158,7 +165,7 @@ body{
 }
 .footer__link:nth-child(3){
     border-left: 2px solid #f36507;
-}
+} */
 
 .footer-credits{
     width: 100%;
