@@ -1,6 +1,6 @@
 :root{
     --encabezado: #533D25;
-    --enlace:#fff;
+    --enlace: #FDFEFE;
 }
 
 body{
@@ -21,9 +21,16 @@ body{
     font-weight: bold;
 }
 
+@media(max-width: 989px){
+    .nav-link{
+        background-color: var(--encabezado);
+    }
+} 
+
 .nav-link:hover{
     color: #C3C7A1;
 }
+
 
 .alto-img{
     height: 650px !important;
@@ -53,31 +60,13 @@ body{
     color: #b3c7a1!important;
 }
 
-/* novedades */
-#novedades{
-    background-color:#000000;
-}
-
-#novedades .titulo{
-    width: 100%;
-    text-align: center;
-    color: #fff;
-}
-
 .accordion-button:not(.collapsed) {
     color: rgb(2, 61, 2);
     background-color: #b3c7a1;
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
-/* sección videos */
-
-#videos{
-    background-color: #fff;
-}
-
-#videos .titulo{
-    width: 100%;
+.mapa{
     text-align: center;
 }
 
@@ -127,6 +116,12 @@ body{
     padding: 70px 0; 
 }
 
+@media(max-width: 600px){
+    #page-footer .ftcontainer{
+       flex-direction: column;
+    }
+} 
+
 .ft-social{
     color: #fff;
     border-radius: 100%;
@@ -167,13 +162,6 @@ body{
     border-left: 2px solid #f36507;
 } */
 
-.footer-credits{
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    background-color: #032247;
-}
-
 /* pagina de contacto */
 #contacto .titulo {
     width: 100%;
@@ -190,27 +178,41 @@ body{
 
 /* pag de televisores */
 
-#televisor .titulo{
+#hortalizas .titulo{
     width: 100%;
     text-align: center;
     margin-top: 115px;
 }
 /* pag de celulares */
 
-#celular .titulo{
+#frutas .titulo{
     width: 100%;
     text-align: center;
     margin-top: 115px;
 }
 
-/* configurar las img en celular */
-#celular img{
-    height: 600px;
+
+/* Botón whatsapp */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
 }
 
-/* simulador */
-#simulador .titulo{
-    width: 100%;
-    text-align: center;
-    margin-top: 115px;
+.my-float{
+	margin-top:16px;
 }

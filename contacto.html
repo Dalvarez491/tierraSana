@@ -19,7 +19,7 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" id="menu">
       <div class="container-fluid">
         <!-- logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="/img/logoOrganicos.png" alt="" id="logo">
             <img src="/img/Orgánicos.png" alt="" id="logo">
         </a>
@@ -60,72 +60,52 @@
 
 <main>        
 
-        <div class="container" id="contacto">
-          <h1 class="titulo">Contacto</h1>
-          <form class="row g-3" action="mailto:#" method="post">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
+    <div class="container" id="contacto">
+      <h1 class="titulo">Contacto</h1>
+      <br>
 
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputPassword4">
-            </div>
+      <form class="row g-3" action="mailto:#" method="post">
 
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Dirección</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Celular</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="3105188168">
-            </div>
-
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">Ciudad</label>
-              <select id="inputCiudades" class="form-select">
-                <option selected>Seleccionar</option>
-                <option value="Medellín">Medellín</option>
-                <option value="Bogotá">Bogotá</option>
-                <option value="Cali">Cali</option>
-              </select>
-            </div>
-
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">Estado</label>
-              <select id="inputState" class="form-select">
-                <option selected>Seleccionar</option>
-                <option value="Antioquia">Antioquia</option>
-                <option value="Cundinamarca">Cundinamarca</option>
-                <option value="Vallde del Cauca">Vallde del Cauca</option>
-              </select>
-            </div>
-
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Cod. Postal</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Acepta los Términos 
-                </label>
-              </div>
-            </div>
-            
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-          </form>
-          <br><br>
-          
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
         </div>
 
-        
+        <div class="col-md-6">
+          <label for="celular" class="form-label">Número de Celular</label>
+          <input type="number" class="form-control" id="celular" required>
+        </div>
+
+        <div class="col-12">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">¿En qué te podemos ayudar?</label>
+          <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+        </div>
+
+      
+      <div class="col-12">
+        <button type="submit" class="btn btn-warning">Enviar</button>
+      </div>
+    </form>
+    <br><br>
+          
+    </div>
+
+    <div class="mapa">
+    <h2>Nuestra dirección</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.2858870639343!2d-75.6221205!3d6.092137799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46868265566ed1%3A0xddbe52348e4c5562!2sV%C3%ADa%20Granja%20El%20Bamb%C3%BA%2C%20Caldas%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1695692917837!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br><br>
+    </div>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=573117778088&text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20productos" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+  
 </main>
 
 <!-- footer - BEM en html y css -->
@@ -150,6 +130,7 @@
               Lunes a Viernes: 8:00 am a 7:00 pm | Sábados: 9:00 am a 7:00 pm
             </span>
           </div> -->
+
 
           <!-- Enlaces -->
           <!-- <div class="footer__menu">
