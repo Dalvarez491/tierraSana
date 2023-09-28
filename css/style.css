@@ -34,8 +34,10 @@ body{
 
 .alto-img{
     height: 650px !important;
+    object-fit: cover;
     padding-top: 60px !important;
     background-size: auto !important;
+    
 }
 
 .btn-warning{
@@ -51,18 +53,18 @@ body{
 }
 
 .nav-link.active{
-    color: #C3C7A1 !important;
+    color: #C3C8A0 !important;
     font-weight: bold !important;
     
 }
 
 .nav-link.active:hover{
-    color: #b3c7a1!important;
+    color: #D7D9B0 !important;
 }
 
 .accordion-button:not(.collapsed) {
     color: rgb(2, 61, 2);
-    background-color: #b3c7a1;
+    background-color: #C3C8A0;
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
@@ -152,21 +154,38 @@ body{
     font-size: 1.0rem;
 }
 
-/* .footer__link:nth-child(1){
-    border-left: 2px solid #f3d707;
+
+.footer__link:nth-child(1){
+    border-left: 2px solid #C3C8A0;
 }
 .footer__link:nth-child(2){
-    border-left: 2px solid #12d608;
+    border-left: 2px solid #b5c8a0;
 }
 .footer__link:nth-child(3){
-    border-left: 2px solid #f36507;
-} */
+    border-left: 2px solid #abc8a0;
+}
+.footer__link:nth-child(4){
+    border-left: 2px solid #a0c8a3;
+}
+.footer__link:nth-child(5){
+    border-left: 2px solid #a0c8af;
+}
 
 /* pagina de contacto */
 #contacto .titulo {
     width: 100%;
     margin-top: 110px;
     text-align: center;
+}
+
+.form-label{
+    color: #90a386;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-control{
+    border-color: #a3a3a3;
 }
 
 /* pag de nosotros */
