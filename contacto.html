@@ -64,32 +64,36 @@
       <h1 class="titulo">Contacto</h1>
       <br>
 
-      <form class="row g-3" action="#" method="post">
+      <form class="row g-3" action="https://formsubmit.co/organicostierrasanasas@gmail.com" method="POST">
 
         <div class="col-md-6">
           <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" required>
+          <input type="text" class="form-control" id="nombre" name="Nombre" required>
         </div>
 
         <div class="col-md-6">
           <label for="celular" class="form-label">Número de Celular</label>
-          <input type="number" class="form-control" id="celular" required>
+          <input type="number" class="form-control" id="celular" name="Celular" required>
         </div>
 
         <div class="col-12">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
+          <input type="email" class="form-control" id="email"  name="Email" required>
         </div>
 
         <div class="mb-3">
           <label for="mensaje" class="form-label">¿En qué te podemos ayudar?</label>
-          <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          <textarea class="form-control" id="mensaje" rows="4" name="Mensaje" required></textarea>
         </div>
 
       
       <div class="col-12">
         <button type="submit" class="btn btn-warning">Enviar</button>
       </div>
+
+      <input type="hidden" name="_captcha" value="false">
+
+
     </form>
     <br><br>
           
